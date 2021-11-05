@@ -111,6 +111,12 @@
     align-items: center;
     margin-right: 100px;
 }
+.privilege__image {
+    width: 193px;
+    height: 193px;
+    background-color: #29C4FD;
+    border-radius: 61px;
+}
 .subtitle_privilege {
     padding-top: 40px;
 }
