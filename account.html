@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/normalize.css">
+    
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/account.css">
+
+    </head>
+<body>
+    <header class="header">
+
+            <div class="header__left">
+            <div class="header__logo"><img src="./img/logo.png" alt="Glasswater"></div>
+        </div>
+        <div class="header__right">
+            <div class="header__menu">
+                <ul class="menu">
+                    <li class="menu__list"><a class="menu__link">Главная</a></li>
+                    <li class="menu__list"><a class="menu__link">О нас</a></li>
+                    <li class="menu__list"><a class="menu__link">Услуги</a></li>
+                    <li class="menu__list"><a class="menu__link">Работы</a></li>
+                    <li class="menu__list"><a class="menu__link">Контакты</a></li>
+                </ul>
+            </div>
+            
+            <div class="header__lang">Russian (RU)</div>
+    
+            <div class="header__burger">
+                <img src="./img/burger.png" alt="burger">
+            </div>
+            <div class="header__user">
+                <img src="./img/user.png" alt="user">
+            </div>
+   
+      
+    </div>
+    </header>
+
+    <section class="account">
+        <h2 class="title title_account">Личный кабинет</h2>
+        <h3 class="account__subtitle">Персональные данные</h3>
+        <form class="form" action="">
+        <div class="image">
+        <label class="image_label" for="upload">
+            <img src="./img/account/avatar.png" alt="">
+        </label>
+        <input type="file" id="upload" class="hidden" name="image" id="image">
+        </div>
+        <div class="input__outer">
+            <label class="subtitle" for="name">Имя</label>
+        <input type="text" class="name_input" id="name" name="name" placeholder="Мария">
+        </div>
+
+        <div class="input__outer">
+            <label class="subtitle" for="lastName">Фамилия</label>
+            <input type="text" class="lastName_input" id="lastName" name="lastName" placeholder="Иванова">
+        </div>
+        
+        <div class="input__outer">
+            <label class="subtitle" for="phone">Телефон</label>
+        <input type="text" id="phone" class="phone_input" name="phone" placeholder="+7 961 555 99 33">
+        </div>
+        <div class="input__outer">
+        <label for="email" class="subtitle">Email</label>
+        <input type="text" id="email" class="email_input" name="email" placeholder="MariaIvanova@gmail.com">
+        </div>
+        <div class="input__outer">
+        <label for="password" class="subtitle">Пароль</label>
+        <input type="password" id="password" class="password_input" name="password" placeholder="Пароль">
+        </div>
+        <div class="submit__outer">
+        <div class="success">
+            <div class="success__image">
+                <img src="./img/account/check.png" alt="">
+            </div>
+            <span class="success__text">Данные успешно сохранены</span>
+        </div>
+       
+        <button class="button" type="submit">Сохранить</button>
+     </div> 
+     <div class="info">
+        <h3 class="account__subtitle account__subtitle_info">Информационные сообщения</h3>
+        <div class="info__row">
+        <input type="checkbox" class="checkbox checkbox__email" name="" id="emailCheck">
+        <span class="fake"></span>
+        <label class="subtitle subtitle_normal" for="emailCheck">Получать информационные сообщения на E-mail</label>
+    </div>
+        <div class="info__row">
+        <input type="checkbox" class="checkbox checkbox__sms" name="" id="smsCheck">
+        <span class="fake"></span>
+        <label class="subtitle subtitle_normal" for="smsCheck">Получать информацию о скидках, новинках и выгодных предложениях по смс</label>
+    </div>
+    </div>
+ 
+    </form>
+  
+</section>
+
+<footer class="footer">
+    <div class="footer__left">
+        <div class="footer__logo">GlassWater</div>
+        <div class="footer__year">2021</div>
+    </div>
+    <div class="footer__right">
+        <div class="footer__info">
+            <span class="footer__text">Connect us</span>
+            <img src="./img/btn.png" alt="">
+        </div>
+        <div class="footer__column">
+            <div class="footer__row">
+                <img src="./img/circle.png" alt="circle">
+                <span class="footer__text">Connect us</span>
+            </div>
+            <div class="footer__row">
+                <img src="./img/circle.png" alt="circle">
+                <span class="footer__text">Connect us</span>
+            </div>
+        </div>
+        <div class="footer__column">
+            <div class="footer__row">
+                <img src="./img/circle.png" alt="circle">
+                <span class="footer__text">Connect us</span>
+            </div>
+            <div class="footer__row">
+                <img src="./img/circle.png" alt="circle">
+                <span class="footer__text">Connect us</span>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
