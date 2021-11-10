@@ -1,0 +1,132 @@
+.title {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 700;
+    color: #29C4FD;
+}
+.subtitle {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+}
+.subtitle_normal {
+    font-weight: normal;
+}
+
+/* .hide {
+    opacity: 0;
+} */
+
+.hidden {
+    display: none;
+}
+
+.order {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 70px 15px;
+}
+.order__inner {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.filter {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.filter__button {
+    padding: 15px 40px;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.15);
+    border-radius: 31.5px;
+    text-transform: uppercase;
+    transition: 0.3s ease-in;
+}
+.filter__button:not(:last-child) {
+    margin-right: 30px;
+}
+
+.filter__button:hover {
+    cursor: pointer;    
+    color: #ffffff;
+    background: #29C4FD;
+}
+
+.order__row {
+    max-width: 990px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.15);
+    border-radius: 25px;
+
+}
+
+.order__row:hover {
+    cursor: pointer;
+}
+.order__left {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+.order__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #29C4FD;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+
+}
+.order__right {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order__status {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 12px;
+    transition: 0.3s ease-in;
+}
+.order__status_active {
+    background-color: #54E920;
+}
+.order__status_active:hover {
+    box-shadow: 0px 2px 20px rgba(84, 233, 32, 0.8)
+}
+.order__status_end {
+    background-color: #29C4FD;
+}
+.order__status_end:hover {
+    box-shadow: 0px 2px 20px rgba(41, 196, 253, 0.8);
+
+}
+
+.order__button {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 90px;
+    padding: 10px 50px;
+    background: #29C4FD;
+    color: #ffffff;
+    border-radius: 25px;
+    transition: 0.3s ease-in;
+}
+.order__button:hover {
+   cursor: pointer;  
+   box-shadow: 0px 4px 30px rgba(41, 196, 253, 0.8);
+}

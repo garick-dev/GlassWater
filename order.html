@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Личный кабинет</title>
+    <title>Заказы</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/normalize.css">
     
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/account.css">
+    <link rel="stylesheet" href="./css/order.css">
 
     </head>
 <body>
@@ -42,64 +42,49 @@
     </div>
     </header>
 
-    <section class="account">
-        <h2 class="title title_account">Личный кабинет</h2>
-        <h3 class="account__subtitle">Персональные данные</h3>
-        <form class="form" action="">
-        <div class="upload">
-        <label class="upload__label" for="upload">
-            <img src="./img/account/avatar.png" alt="">
-        </label>
-            <input type="file" id="upload" class="hide" name="upload">
+<section class="order">
+    <div class="order__inner">
+        <h2 class="title title_order">Заказы</h2>
+        <div class="filter">
+            <div class="subtitle filter__button">Все заказы</div>
+            <div class="subtitle filter__button">Активные</div>
+            <div class="subtitle filter__button">Завершенные</div>
         </div>
-        <div class="form__row">
-            <label class="subtitle" for="name">Имя</label>
-            <input type="text" id="name" name="name" placeholder="Мария">
-        </div>
-
-        <div class="form__row">
-            <label class="subtitle" for="lastName">Фамилия</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Иванова">
-        </div>
-        
-        <div class="form__row">
-            <label class="subtitle" for="phone">Телефон</label>
-            <input type="text" id="phone" name="phone" placeholder="+7 961 555 99 33">
-        </div>
-        <div class="form__row">
-            <label for="email" class="subtitle">Email</label>
-            <input type="text" id="email" name="email"  placeholder="MariaIvanova@gmail.com">
-        </div>
-        <div class="form__row">
-            <label for="password" class="subtitle">Пароль</label>
-            <input type="password" id="password"name="password" placeholder="Пароль">
-        </div>
-        <div class="form__row submit">
-        <div class="success">
-            <div class="success__image">
-                <img src="./img/account/check.png" alt="">
-            </div>
-            <span class="success__text">Данные успешно сохранены</span>
-        </div>
-       
-        <button class="button" type="submit">Сохранить</button>
-     </div> 
-     <div class="info">
-        <h3 class="account__subtitle account__subtitle_info">Информационные сообщения</h3>
-        <div class="info__row">
-        <input type="checkbox" id="info__email" class="info__checkbox" >
-        <label class="info__fake" for="info__email"></label>
-        <label class="subtitle subtitle_normal" for="info__email">Получать информационные сообщения на E-mail</label>
     </div>
-        <div class="info__row">
-        <input type="checkbox" id="info__sms" class="info__checkbox" >
-        <label class="info__fake" for="info__sms"></label>
-        <label class="subtitle subtitle_normal" for="info__sms">Получать информацию о скидках, новинках и выгодных предложениях по смс</label>
+    <div class="order__row">
+        <div class="order__left">
+            <div class="subtitle order__number">1</div>
+            <h3 class="subtitle">Видео хостинг</h3>
+        </div> 
+         <div class="order__right">
+             <div class="subtitle subtitle_normal order__date">28.09.2021</div>
+             <div class="order__status order__status_active ">В процессе</div>
+             <div class="order__status order__status_end hidden">Готово</div>
+         </div>
     </div>
+    <div class="order__row">
+        <div class="order__left">
+            <div class="subtitle order__number">2</div>
+            <h3 class="subtitle">Разработка модулей</h3>
+        </div> 
+         <div class="order__right">
+             <div class="subtitle subtitle_normal order__date">21.09.2021</div>
+             <div class="order__status order__status_active ">В процессе</div>
+             <div class="order__status order__status_end hidden">Готово</div>
+         </div>
     </div>
- 
-    </form>
-  
+    <div class="order__row">
+        <div class="order__left">
+            <div class="subtitle order__number">3</div>
+            <h3 class="subtitle">Разработка логотипа</h3>
+        </div> 
+         <div class="order__right">
+             <div class="subtitle subtitle_normal order__date">19.09.2021</div>
+             <div class="order__status order__status_active ">В процессе</div>
+             <div class="order__status order__status_end hidden">Готово</div>
+         </div>
+    </div>
+    <div class="subtitle subtitle_normal order__button">+ Добавить новый проект</div>
 </section>
 
 <footer class="footer">
