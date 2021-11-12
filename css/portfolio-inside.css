@@ -1,0 +1,112 @@
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #29C4FD;
+    text-align: center;
+    padding-bottom: 60px;
+
+}
+.subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #29C4FD;
+}
+.text {
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+.content .text:last-child{
+    padding: 0;
+}
+
+.portfolio {
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+.portfolio__header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.portfolio__prev {
+    position: relative;
+}
+.portfolio__prev::before{
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 35px;
+    height: 35px;
+    background-color: #29C4FD;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform: rotate(-90deg);
+}
+.portfolio__prev:hover {
+    cursor: pointer;
+}
+
+.title_header {
+    margin-top: -30px;
+
+}
+.content__text {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}   
+.slider {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0;
+    position: relative;
+}
+.slider::before {
+    content: "";
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    left: 0;
+    top: 200px;
+    background-image: url("../img/portfolio-inside/2.png");
+    z-index: -1;
+}
+.slider::after {
+    content: "";
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    right: 0;
+    top: 200px;
+    background-image: url("../img/portfolio-inside/3.png");
+    z-index: -1;
+}
+.slider__image::before, .slider__image::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;   
+    background-color: #29C4FD;
+    border: 3px solid #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider__image:hover::before,.slider__image:hover::after{
+    cursor: pointer;
+}
+.slider__image::before {
+    left: 85px;
+    top: 450px;
+    background-image: url("../img/portfolio-inside/arrow-prev.png");
+}
+.slider__image::after {
+    right: 85px;
+    top: 450px; 
+    background-image: url("../img/portfolio-inside/arrow-next.png");
+ 
+}
