@@ -1,3 +1,24 @@
+.glide__outer {
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.glide {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/* .glide__track {
+    overflow: hidden;
+} */
+.glide__slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glide__slide {
+    list-style: none;
+    margin: 35px !important; 
+}
 .title {
     font-size: 48px;
     line-height: 58px;
@@ -30,6 +51,7 @@
 }
 
 .hosting_prev {
+    display: inline-block;
     padding-bottom: 0 !important;
     position: relative;
 }
@@ -43,6 +65,9 @@
     background-color: #29C4FD;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     transform: rotate(-90deg);
+}
+.hosting_prev:hover {
+    cursor: pointer;
 }
 .hosting__slider {
     margin-top: 85px;
@@ -110,6 +135,7 @@
     padding: 30px 60px 30px 30px;
     box-shadow: 0px 4px 52px rgba(84, 101, 145, 0.15);
     border-radius: 88.5px;
+    transition: 0.3s ease-in;
 }
 .tariffs__item:not(:last-child) {
     margin-right: 80px;
@@ -129,6 +155,7 @@
     background-color: #29C4FD;
 }
 
+
 .tariffs__price {
     font-size: 24px;
     line-height: 29px;
@@ -137,6 +164,7 @@
 
 .tariffs__item_active {
     background-color: #29C4FD;
+    color: #FFFFFF;
 
 }
 .tariffs__number_active {
