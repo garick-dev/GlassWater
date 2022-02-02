@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Личный кабинет</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/normalize.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/account.css">
@@ -15,124 +15,127 @@
 <body>
     <header class="header">
 
-            <div class="header__left">
-            <div class="header__logo"><img src="./img/logo.png" alt="Glasswater"></div>
-        </div>
-        <div class="header__right">
-            <div class="header__menu">
-                <ul class="menu">
-                    <li class="menu__list"><a class="menu__link">Главная</a></li>
-                    <li class="menu__list"><a class="menu__link">О нас</a></li>
-                    <li class="menu__list"><a class="menu__link">Услуги</a></li>
-                    <li class="menu__list"><a class="menu__link">Работы</a></li>
-                    <li class="menu__list"><a class="menu__link">Контакты</a></li>
-                </ul>
-            </div>
-            
-            <div class="header__lang">Russian (RU)</div>
-    
-            <div class="header__burger">
-                <img src="./img/burger.png" alt="burger">
-            </div>
-            <div class="header__user">
-                <img src="./img/user.png" alt="user">
-            </div>
-   
-      
+    <div class="header__left">
+        <a href="./index.html" class="header__logo">GlassWater</a>
     </div>
-    </header>
+    <div class="header__right">
+        <div class="header__menu">
+            <ul class="menu __hidden-menu display-none_mob" id="__menu">
+                <li class="menu__list"><a href="./index.html" class="menu__link">Главная</a></li>
+                <li class="menu__list"><a href="./services.html" class="menu__link">Услуги</a></li>
+                <li class="menu__list"><a href="./portfolio.html" class="menu__link">Портфолио</a></li>
+                <li class="menu__list"><a href="./blog.html" class="menu__link">Блог</a></li>
+                <li class="menu__list"><a href="./order.html" class="menu__link">Мои заказы</a></li>
+            </ul>
+        </div>
+
+        <div class="header__lang">Russian (RU)</div>
+
+
+        <div class="header__user">
+            <a href="./account.html"> <img src="./img/user.png" alt="user"> </a>
+        </div>
+        <div class="burger" id="__burger">
+            <span id="__burger-item-1" class="burger__item "></span>
+            <span id="__burger-item-2" class="burger__item"></span>
+            <span id="__burger-item-3" class="burger__item"></span>
+        </div>
+    </div>
+</header>
 
     <section class="account">
         <h2 class="title title_account">Личный кабинет</h2>
         <h3 class="account__subtitle">Персональные данные</h3>
         <form class="form" action="">
-        <div class="upload">
-        <label class="upload__label" for="upload">
-            <img src="./img/account/avatar.png" alt="">
-        </label>
-            <input type="file" id="upload" class="hide" name="upload">
-        </div>
-        <div class="form__row">
-            <label class="subtitle" for="name">Имя</label>
-            <input type="text" id="name" name="name" placeholder="Мария">
-        </div>
+            <div class="upload">
+                <label class="upload__label" for="upload">
+                    <img src="./img/account/avatar.png" alt="">
+                </label>
+                <input type="file" id="upload" class="hide" name="upload">
+            </div>
+            <div class="form__row">
+                <label class="subtitle" for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Мария">
+            </div>
 
-        <div class="form__row">
-            <label class="subtitle" for="lastName">Фамилия</label>
-            <input type="text" id="lastName" name="lastName" placeholder="Иванова">
-        </div>
-        
-        <div class="form__row">
-            <label class="subtitle" for="phone">Телефон</label>
-            <input type="text" id="phone" name="phone" placeholder="+7 961 555 99 33">
-        </div>
-        <div class="form__row">
-            <label for="email" class="subtitle">Email</label>
-            <input type="text" id="email" name="email"  placeholder="MariaIvanova@gmail.com">
-        </div>
-        <div class="form__row">
-            <label for="password" class="subtitle">Пароль</label>
-            <input type="password" id="password"name="password" placeholder="Пароль">
-        </div>
-        <div class="form__row submit">
-        <div class="success">
-            <div class="success__image">
-                <img src="./img/account/check.png" alt="">
+            <div class="form__row">
+                <label class="subtitle" for="lastName">Фамилия</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Иванова">
             </div>
-            <span class="success__text">Данные успешно сохранены</span>
-        </div>
-       
-        <button class="button" type="submit">Сохранить</button>
-     </div> 
-     <div class="info">
-        <h3 class="account__subtitle account__subtitle_info">Информационные сообщения</h3>
-        <div class="info__row">
-        <input type="checkbox" id="info__email" class="info__checkbox" >
-        <label class="info__fake" for="info__email"></label>
-        <label class="subtitle subtitle_normal" for="info__email">Получать информационные сообщения на E-mail</label>
-    </div>
-        <div class="info__row">
-        <input type="checkbox" id="info__sms" class="info__checkbox" >
-        <label class="info__fake" for="info__sms"></label>
-        <label class="subtitle subtitle_normal" for="info__sms">Получать информацию о скидках, новинках и выгодных предложениях по смс</label>
-    </div>
-    </div>
- 
-    </form>
-  
-</section>
 
-<footer class="footer">
-    <div class="footer__left">
-        <div class="footer__logo">GlassWater</div>
-        <div class="footer__year">2021</div>
-    </div>
-    <div class="footer__right">
-        <div class="footer__info">
-            <span class="footer__text">Connect us</span>
-            <img src="./img/btn.png" alt="">
+            <div class="form__row">
+                <label class="subtitle" for="phone">Телефон</label>
+                <input type="text" id="phone" name="phone" placeholder="+7 961 555 99 33">
+            </div>
+            <div class="form__row">
+                <label for="email" class="subtitle">Email</label>
+                <input type="text" id="email" name="email"  placeholder="MariaIvanova@gmail.com">
+            </div>
+            <div class="form__row">
+                <label for="password" class="subtitle">Пароль</label>
+                <input type="password" id="password"name="password" placeholder="Пароль">
+            </div>
+            <div class="form__row submit">
+                <div class="success">
+                    <div class="success__image">
+                        <img src="./img/account/check.png" alt="">
+                    </div>
+                    <span class="success__text">Данные успешно сохранены</span>
+                </div>
+
+                <button class="button" type="submit">Сохранить</button>
+            </div>
+            <div class="info">
+                <h3 class="account__subtitle account__subtitle_info">Информационные сообщения</h3>
+                <div class="info__row">
+                    <input type="checkbox" id="info__email" class="info__checkbox" >
+                    <label class="info__fake" for="info__email"></label>
+                    <label class="subtitle subtitle_normal" for="info__email">Получать информационные сообщения на E-mail</label>
+                </div>
+                <div class="info__row">
+                    <input type="checkbox" id="info__sms" class="info__checkbox" >
+                    <label class="info__fake" for="info__sms"></label>
+                    <label class="subtitle subtitle_normal" for="info__sms">Получать информацию о скидках, новинках и выгодных предложениях по смс</label>
+                </div>
+            </div>
+
+        </form>
+
+    </section>
+
+    <footer class="footer">
+        <div class="footer__left">
+            <div class="footer__logo">GlassWater</div>
+            <div class="footer__year"><?php echo $year; ?></div>
         </div>
-        <div class="footer__column">
-            <div class="footer__row">
-                <img src="./img/circle.png" alt="circle">
+        <div class="footer__right">
+            <div class="footer__info">
                 <span class="footer__text">Connect us</span>
+                <div class="footer__button"></div>
             </div>
-            <div class="footer__row">
-                <img src="./img/circle.png" alt="circle">
-                <span class="footer__text">Connect us</span>
+            <div class="footer__column">
+                <div class="footer__row">
+                    <div class="footer__image"></div>
+                    <span class="footer__text">Connect us</span>
+                </div>
+                <div class="footer__row">
+                    <div class="footer__image"></div>
+                    <span class="footer__text">Connect us</span>
+                </div>
+            </div>
+            <div class="footer__column">
+                <div class="footer__row">
+                    <div class="footer__image"></div>
+                    <span class="footer__text">Connect us</span>
+                </div>
+                <div class="footer__row">
+                    <div class="footer__image"></div>
+                    <span class="footer__text">Connect us</span>
+                </div>
             </div>
         </div>
-        <div class="footer__column">
-            <div class="footer__row">
-                <img src="./img/circle.png" alt="circle">
-                <span class="footer__text">Connect us</span>
-            </div>
-            <div class="footer__row">
-                <img src="./img/circle.png" alt="circle">
-                <span class="footer__text">Connect us</span>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
+
+<script src="./js/main.js"></script>
 </body>
 </html>

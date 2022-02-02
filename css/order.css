@@ -1,12 +1,10 @@
 .title {
     font-size: 48px;
-    line-height: 58px;
     font-weight: 700;
     color: #29C4FD;
 }
 .subtitle {
     font-size: 24px;
-    line-height: 29px;
     font-weight: 700;
 }
 .subtitle_normal {
@@ -29,36 +27,52 @@
 .order__inner {
     max-width: 1150px;
     margin: 0 auto;
-    padding: 0 15px;
+}
+.glide__slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glide__slide {
+    list-style: none;
 }
 .filter {
     margin-top: 30px;
     margin-bottom: 80px;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.filter__inner {
+    max-width: 1480px;
+    margin: 0 auto;
+
+}
+.glide__slide {
+    width: 100% !important;
 }
 .filter__button {
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
     padding: 15px 40px;
-    box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.15);
-    border-radius: 31.5px;
+    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.15);
+    border-radius: 33px;
     text-transform: uppercase;
-    transition: 0.3s ease-in;
-}
-.filter__button:not(:last-child) {
-    margin-right: 30px;
+    transition: 0.2s ease-in;
+    margin: 10px;
 }
 
 .filter__button:hover {
-    cursor: pointer;    
+    cursor: pointer;
     color: #ffffff;
     background: #29C4FD;
 }
 
 .order__row {
     max-width: 990px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
     padding: 30px 40px;
     display: flex;
     justify-content: space-between;
@@ -83,7 +97,7 @@
     background-color: #29C4FD;
     color: #ffffff;
     border-radius: 50%;
-    width: 40px;
+    min-width: 40px;
     height: 40px;
     margin-right: 20px;
 
@@ -105,13 +119,13 @@
     background-color: #54E920;
 }
 .order__status_active:hover {
-    box-shadow: 0px 2px 20px rgba(84, 233, 32, 0.8)
+    box-shadow: 0 2px 20px rgba(84, 233, 32, 0.8)
 }
 .order__status_end {
     background-color: #29C4FD;
 }
 .order__status_end:hover {
-    box-shadow: 0px 2px 20px rgba(41, 196, 253, 0.8);
+    box-shadow: 0 2px 20px rgba(41, 196, 253, 0.8);
 
 }
 
@@ -127,6 +141,75 @@
     transition: 0.3s ease-in;
 }
 .order__button:hover {
-   cursor: pointer;  
-   box-shadow: 0px 4px 30px rgba(41, 196, 253, 0.8);
+    cursor: pointer;
+    box-shadow: 0px 4px 30px rgba(41, 196, 253, 0.8);
+}
+
+@media (max-width: 1920px) {
+    .title {
+        font-size: calc(22px + (48 - 22) * ((100vw - 320px) / (1920 - 320))) ;
+    }
+    .subtitle {
+        font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320))) ;
+    }
+    .order__status {
+        font-size: calc(12px + (14 - 12) * ((100vw - 320px) / (1920 - 320))) ;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .order__right {
+        width: 40%;
+    }
+}
+@media (max-width: 770px) {
+
+    .order {
+        padding: calc(50px + (70 - 50) * ((100vw - 320px) / (770 - 320))) 15px;
+    }
+    .filter {
+        flex-direction: column;
+        margin-bottom: calc(50px + (80 - 50) * ((100vw - 320px) / (770 - 320)));
+    }
+    .filter__button {
+        width: 80%;
+        text-align: center;
+        margin: 0 0 10px calc(-30px + (-50 + 30) * ((100vw - 320px) / (770 - 320)));;
+        padding: 15px calc(20px + (40 - 20) * ((100vw - 320px) / (770 - 320)));
+    }
+    .filter__button:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: calc(20px + (30 - 20) * ((100vw - 320px) / (770 - 320))) ;
+    }
+    .order__row {
+        flex-direction: column;
+    }
+    .order__left {
+        width: 100%;
+    }
+    .order__number {
+        min-width: calc(35px + (40 - 35) * ((100vw - 320px) / (770 - 320)));
+        height: calc(35px + (40 - 35) * ((100vw - 320px) / (770 - 320)));
+    }
+    .order__right {
+        padding-top: 20px;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .order__button {
+        margin-top: calc(50px + (70 - 50) * ((100vw - 320px) / (770 - 320)));
+    }
+}
+@media (max-width: 576px){
+    .order__right {
+        flex-direction: column;
+    }
+    .order__status {
+        margin-top: 20px;
+    }
+    .filter__button {
+        margin: 0 0 10px calc(-30px + (-20 + 30) * ((100vw - 320px) / (770 - 320)));
+
+    }
 }

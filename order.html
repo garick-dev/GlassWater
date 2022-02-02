@@ -5,84 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Заказы</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/normalize.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/order.css">
 
     </head>
 <body>
-    <header class="header">
+<header class="header">
 
-            <div class="header__left">
-            <div class="header__logo"><img src="./img/logo.png" alt="Glasswater"></div>
-        </div>
-        <div class="header__right">
-            <div class="header__menu">
-                <ul class="menu">
-                    <li class="menu__list"><a class="menu__link">Главная</a></li>
-                    <li class="menu__list"><a class="menu__link">О нас</a></li>
-                    <li class="menu__list"><a class="menu__link">Услуги</a></li>
-                    <li class="menu__list"><a class="menu__link">Работы</a></li>
-                    <li class="menu__list"><a class="menu__link">Контакты</a></li>
-                </ul>
-            </div>
-            
-            <div class="header__lang">Russian (RU)</div>
-    
-            <div class="header__burger">
-                <img src="./img/burger.png" alt="burger">
-            </div>
-            <div class="header__user">
-                <img src="./img/user.png" alt="user">
-            </div>
-   
-      
+    <div class="header__left">
+        <a href="./index.html" class="header__logo">GlassWater</a>
     </div>
-    </header>
+    <div class="header__right">
+        <div class="header__menu">
+            <ul class="menu __hidden-menu display-none_mob" id="__menu">
+                <li class="menu__list"><a href="./index.html" class="menu__link">Главная</a></li>
+                <li class="menu__list"><a href="./services.html" class="menu__link">Услуги</a></li>
+                <li class="menu__list"><a href="./portfolio.html" class="menu__link">Портфолио</a></li>
+                <li class="menu__list"><a href="./blog.html" class="menu__link">Блог</a></li>
+                <li class="menu__list"><a href="./order.html" class="menu__link">Мои заказы</a></li>
+            </ul>
+        </div>
+
+        <div class="header__lang">Russian (RU)</div>
+
+
+        <div class="header__user">
+            <a href="./account.html"> <img src="./img/user.png" alt="user"> </a>
+        </div>
+        <div class="burger" id="__burger">
+            <span id="__burger-item-1" class="burger__item "></span>
+            <span id="__burger-item-2" class="burger__item"></span>
+            <span id="__burger-item-3" class="burger__item"></span>
+        </div>
+    </div>
+</header>
 
 <section class="order">
     <div class="order__inner">
         <h2 class="title title_order">Заказы</h2>
-        <div class="filter">
-            <div class="subtitle filter__button">Все заказы</div>
-            <div class="subtitle filter__button">Активные</div>
-            <div class="subtitle filter__button">Завершенные</div>
+        <div class="filter filter_order">
+            <div class="filter__outer">
+                <div class="filter__inner">
+                    <div class="glide order__glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide">
+                                    <div class="subtitle filter__button">вcе заказы</div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="subtitle filter__button">активные</div>
+                                </li>
+                                <li class="glide__slide">
+                                    <div class="subtitle filter__button">завершенные</div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     </div>
     <div class="order__row">
         <div class="order__left">
             <div class="subtitle order__number">1</div>
             <h3 class="subtitle">Видео хостинг</h3>
-        </div> 
-         <div class="order__right">
-             <div class="subtitle subtitle_normal order__date">28.09.2021</div>
-             <div class="order__status order__status_active ">В процессе</div>
-             <div class="order__status order__status_end hidden">Готово</div>
-         </div>
+        </div>
+        <div class="order__right">
+            <div class="subtitle subtitle_normal order__date">28.09.2021</div>
+            <div class="order__status order__status_active ">В процессе</div>
+            <div class="order__status order__status_end hidden">Готово</div>
+        </div>
     </div>
     <div class="order__row">
         <div class="order__left">
             <div class="subtitle order__number">2</div>
             <h3 class="subtitle">Разработка модулей</h3>
-        </div> 
-         <div class="order__right">
-             <div class="subtitle subtitle_normal order__date">21.09.2021</div>
-             <div class="order__status order__status_active ">В процессе</div>
-             <div class="order__status order__status_end hidden">Готово</div>
-         </div>
+        </div>
+        <div class="order__right">
+            <div class="subtitle subtitle_normal order__date">21.09.2021</div>
+            <div class="order__status order__status_active ">В процессе</div>
+            <div class="order__status order__status_end hidden">Готово</div>
+        </div>
     </div>
     <div class="order__row">
         <div class="order__left">
             <div class="subtitle order__number">3</div>
             <h3 class="subtitle">Разработка логотипа</h3>
-        </div> 
-         <div class="order__right">
-             <div class="subtitle subtitle_normal order__date">19.09.2021</div>
-             <div class="order__status order__status_active ">В процессе</div>
-             <div class="order__status order__status_end hidden">Готово</div>
-         </div>
+        </div>
+        <div class="order__right">
+            <div class="subtitle subtitle_normal order__date">19.09.2021</div>
+            <div class="order__status order__status_active ">В процессе</div>
+            <div class="order__status order__status_end hidden">Готово</div>
+        </div>
     </div>
     <div class="subtitle subtitle_normal order__button">+ Добавить новый проект</div>
 </section>
@@ -90,34 +110,38 @@
 <footer class="footer">
     <div class="footer__left">
         <div class="footer__logo">GlassWater</div>
-        <div class="footer__year">2021</div>
+        <div class="footer__year"><?php echo $year; ?></div>
     </div>
     <div class="footer__right">
         <div class="footer__info">
             <span class="footer__text">Connect us</span>
-            <img src="./img/btn.png" alt="">
+            <div class="footer__button"></div>
         </div>
         <div class="footer__column">
             <div class="footer__row">
-                <img src="./img/circle.png" alt="circle">
+                <div class="footer__image"></div>
                 <span class="footer__text">Connect us</span>
             </div>
             <div class="footer__row">
-                <img src="./img/circle.png" alt="circle">
+                <div class="footer__image"></div>
                 <span class="footer__text">Connect us</span>
             </div>
         </div>
         <div class="footer__column">
             <div class="footer__row">
-                <img src="./img/circle.png" alt="circle">
+                <div class="footer__image"></div>
                 <span class="footer__text">Connect us</span>
             </div>
             <div class="footer__row">
-                <img src="./img/circle.png" alt="circle">
+                <div class="footer__image"></div>
                 <span class="footer__text">Connect us</span>
             </div>
         </div>
     </div>
 </footer>
+
+<script src="./js/glide/dist/glide.min.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/order.js"></script>
 </body>
 </html>

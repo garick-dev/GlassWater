@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./css/normalize.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/portfolio.css">
@@ -15,105 +15,109 @@
 <body>
     <header class="header">
 
-            <div class="header__left">
-            <div class="header__logo"><img src="./img/logo.png" alt="Glasswater"></div>
-        </div>
-        <div class="header__right">
-            <div class="header__menu">
-                <ul class="menu">
-                    <li class="menu__list"><a class="menu__link">Главная</a></li>
-                    <li class="menu__list"><a class="menu__link">О нас</a></li>
-                    <li class="menu__list"><a class="menu__link">Услуги</a></li>
-                    <li class="menu__list"><a class="menu__link">Работы</a></li>
-                    <li class="menu__list"><a class="menu__link">Контакты</a></li>
-                </ul>
-            </div>
-            
-            <div class="header__lang">Russian (RU)</div>
-    
-            <div class="header__burger">
-                <img src="./img/burger.png" alt="burger">
-            </div>
-            <div class="header__user">
-                <img src="./img/user.png" alt="user">
-            </div>
-   
-      
+    <div class="header__left">
+        <a href="./index.html" class="header__logo">GlassWater</a>
     </div>
-    </header>
+    <div class="header__right">
+        <div class="header__menu">
+            <ul class="menu __hidden-menu display-none_mob" id="__menu">
+                <li class="menu__list"><a href="./index.html" class="menu__link">Главная</a></li>
+                <li class="menu__list"><a href="./services.html" class="menu__link">Услуги</a></li>
+                <li class="menu__list"><a href="./portfolio.html" class="menu__link">Портфолио</a></li>
+                <li class="menu__list"><a href="./blog.html" class="menu__link">Блог</a></li>
+                <li class="menu__list"><a href="./order.html" class="menu__link">Мои заказы</a></li>
+            </ul>
+        </div>
+
+        <div class="header__lang">Russian (RU)</div>
+
+
+        <div class="header__user">
+            <a href="./account.html"> <img src="./img/user.png" alt="user"> </a>
+        </div>
+        <div class="burger" id="__burger">
+            <span id="__burger-item-1" class="burger__item "></span>
+            <span id="__burger-item-2" class="burger__item"></span>
+            <span id="__burger-item-3" class="burger__item"></span>
+        </div>
+    </div>
+</header>
 
     <section class="portfolio">
         <div class="portfolio__header">
             <h2 class="title title_black">Портфолио</h2>
-            <div class="portfolio__image portfolio__image_header">
+            <a href="./portfolio-inside.html" class="portfolio__image portfolio__image_header">
                 <img src="./img/portfolio/1.png" alt="">
-            </div>
+            </a>
+            <a href="./portfolio-inside.html">
             <h2 class="title title_blue">Сайты</h2>
+            </a>
         </div>
         <div class="portfolio__content">
             <div class="portfolio__row">
-                <div class="portfolio__item">
+                <a href="./portfolio-inside.html" class="portfolio__item">
                     <div class="portfolio__image">
                         <img src="./img/portfolio/2.png" alt="">
                     </div>
                     <h3 class="subtitle">Приложения </h3>
-                </div>
-                <div class="portfolio__item">
+                </a>
+                <a href="./portfolio-inside.html" class="portfolio__item">
                     <div class="portfolio__image">
                         <img src="./img/portfolio/3.png" alt="">
                     </div>
                     <h3 class="subtitle">Разработка модулей</h3>
-                </div>
+                </a>
             </div>
             <div class="portfolio__row">
-                <div class="portfolio__item">
+                <a href="./portfolio-inside.html" class="portfolio__item">
                     <div class="portfolio__image">
                         <img src="./img/portfolio/4.png" alt="">
                     </div>
                     <h3 class="subtitle">Графическое оформление </h3>
-                </div>
-                <div class="portfolio__item">
+                </a>
+                <a href="./portfolio-inside.html" class="portfolio__item">
                     <div class="portfolio__image">
                         <img src="./img/portfolio/5.png" alt="">
                     </div>
                     <h3 class="subtitle">Локальные задачи </h3>
-                </div>
+                </a>
             </div>
         </div>
     </section>
 
 
-<footer class="footer">
-    <div class="footer__left">
-        <div class="footer__logo">GlassWater</div>
-        <div class="footer__year">2021</div>
-    </div>
-    <div class="footer__right">
-        <div class="footer__info">
-            <span class="footer__text">Connect us</span>
-            <img src="./img/btn.png" alt="">
+    <footer class="footer">
+        <div class="footer__left">
+            <div class="footer__logo">GlassWater</div>
+            <div class="footer__year"><?php echo $year; ?></div>
         </div>
-        <div class="footer__column">
-            <div class="footer__row">
-                <img src="./img/circle.png" alt="circle">
+        <div class="footer__right">
+            <div class="footer__info">
                 <span class="footer__text">Connect us</span>
+                <div class="footer__button"></div>
             </div>
-            <div class="footer__row">
-                <img src="./img/circle.png" alt="circle">
-                <span class="footer__text">Connect us</span>
+            <div class="footer__column">
+                <div class="footer__row">
+                    <div class="footer__image"></div>
+                    <span class="footer__text">Connect us</span>
+                </div>
+                <div class="footer__row">
+                    <div class="footer__image"></div>
+                    <span class="footer__text">Connect us</span>
+                </div>
+            </div>
+            <div class="footer__column">
+                <div class="footer__row">
+                    <div class="footer__image"></div>
+                    <span class="footer__text">Connect us</span>
+                </div>
+                <div class="footer__row">
+                    <div class="footer__image"></div>
+                    <span class="footer__text">Connect us</span>
+                </div>
             </div>
         </div>
-        <div class="footer__column">
-            <div class="footer__row">
-                <img src="./img/circle.png" alt="circle">
-                <span class="footer__text">Connect us</span>
-            </div>
-            <div class="footer__row">
-                <img src="./img/circle.png" alt="circle">
-                <span class="footer__text">Connect us</span>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>
